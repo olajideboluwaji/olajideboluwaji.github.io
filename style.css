@@ -1,0 +1,177 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    a {
+      color: teal;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      background: #f6f8fa;
+      border-bottom: 1px solid #d6dfe5;
+      padding: 16px 0;
+    }
+
+    .topbar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: #14202b;
+    }
+
+    .brand:hover {
+      color: #0f6b6b
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 10px;
+      color: #14202b;
+    }
+
+    .menu a:hover {
+      color: #0f6b6b
+    }
+
+    .hero {
+      padding: 80px 0;
+    }
+
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin: 0 0 20px 0;
+    }
+
+    .hero p {
+      color: #566775;
+      margin: 0 0 30px 0;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      border: 2px solid #0f6b6b;
+      background: #0f6b6b;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button-empty {
+      background: transparent;
+      color: #566775;
+      border-color: #d6dfe5;
+    }
+
+    .button:hover {
+      color: #14202b;
+    }
+
+    .button-empty:hover {
+      color: #0f6b6b;
+    }
+
+    .badge {
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-items: center;
+    }
+
+    img {
+      border-radius: 15px;
+    }
+
+    .section {
+      padding: 40px 0;
+      border-top: 1px solid #d6dfe5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #d6dfe5;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+    }
+
+    form {
+      max-width: 400px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0 16px 0;
+      border: 1px solid #d6dfe5;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;             
+    }
+    button {
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #0f6b6b;
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;               
+    }
+
+     footer {
+      border-top: 1px solid #d6dfe5;
+      padding: 30px 0;
+      color: #566775;
+    }
+
+    @media (max-width: 800px) {
+      .hero .wrap { 
+        grid-template-columns: 1fr; 
+      }
+      .cards { 
+        grid-template-columns: 1fr; 
+      }
+      .hero h1 { 
+        font-size: 38px; 
+      }
+      .badge { 
+        max-width: 200px; 
+      }
+      .button { 
+        margin-bottom: 10px;
+    }
+    }
